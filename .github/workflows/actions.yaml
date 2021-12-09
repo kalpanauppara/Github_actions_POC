@@ -1,0 +1,17 @@
+name: POC-workflow
+on:
+  push:
+    branches:
+    - 'DEVELOPMENT'
+    - '!development'
+    - '!qa'
+    - '!qa-experimental'
+    - '!prod'
+    - '!main'
+    - '!bugfix'
+  pull_request:
+    branches:
+    - 'dev-experimental'
+    
+    types: 
+    - closed  
